@@ -1,0 +1,24 @@
+# Configuration file for specifying the categories transactions
+# should be classified into.
+
+- name: "Food and Drinks"
+  subcategories:
+    - name: "Groceries"
+    - name: "Restaurants"
+    - name: "Coffee and Snacks"
+    - name: "Alcohol and Tobacco"
+    - name: "Bars and Nightlife"
+    - name: "Other"
+
+- name: "Transport"
+  subcategories:
+    - name: "Public Transport"
+    - name: "Taxi and Ride Sharing"
+    - name: "Car and Fuel"
+    - name: "Flights"
+    - name: "Other"
+
+- name: "Other"
+  subcategories:
+    - name: "Other"
+
