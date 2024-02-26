@@ -1,6 +1,23 @@
 # Configuration file for specifying the categories transactions
 # should be classified into.
 
+- name: "Household and Services"
+  subcategories:
+    - name: "Rent"
+    - name: "Mortgage"
+    - name: "Communications"
+    - name: "Utilities"
+    - name: "Insurances and Fees"
+    - name: "Services"
+    - name: "Other"
+
+- name: "Home Improvements"
+  subcategories:
+    - name: "Renovations and Repairs"
+    - name: "Furniture and Interior"
+    - name: "Garden"
+    - name: "Other"
+
 - name: "Food and Drinks"
   subcategories:
     - name: "Groceries"
@@ -18,7 +35,39 @@
     - name: "Flights"
     - name: "Other"
 
-- name: "Other"
+- name: "Shopping"
   subcategories:
+    - name: "Clothes and Accesories"
+    - name: "Electronics"
+    - name: "Hobby and Sports Equipment"
+    - name: "Books and Games"
+    - name: "Gifts"
     - name: "Other"
 
+- name: "Leisure"
+  subcategories:
+    - name: "Culture and Events"
+    - name: "Hobbies"
+    - name: "Sports and Fitness"
+    - name: "Vacation"
+    - name: "Other"
+
+- name: "Health and Beauty"
+  subcategories:
+    - name: "Healthcare"
+    - name: "Pharmacy"
+    - name: "Eyecare"
+    - name: "Beauty"
+    - name: "Other"
+
+- name: "Other"
+  subcategories:
+    - name: "Cash Withdrawals"
+    - name: "Business Expenses"
+    - name: "Kids"
+    - name: "Pets"
+    - name: "Charity"
+    - name: "Education"
+    - name: "Other"
+
+# TODO: Add more categories and subcategories https://docs.tink.com/entries/articles/transaction-categories
