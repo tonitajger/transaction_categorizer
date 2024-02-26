@@ -2,7 +2,6 @@ import logging
 import os
 
 import typer
-from config import load_secrets
 from models import ModelChoice, model_factory
 from parsers import ParserChoice, parser_factory
 from prompts import get_prompt
@@ -18,7 +17,6 @@ logging.basicConfig(
     datefmt="[%Y-%m-%dT%H:%M:%S%z]",
 )
 
-SECRETS = load_secrets()
 
 app = typer.Typer()
 
@@ -39,6 +37,7 @@ def categorize(
     logger.info(f"Using {model=} for categorization")
 
     parser = parser_factory(ParserChoice.structured)
+
     prompt = get_prompt(parser)
 
     chain = prompt | model | parser
